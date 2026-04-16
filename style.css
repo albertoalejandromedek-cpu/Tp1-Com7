@@ -14,7 +14,7 @@ body {
     border-bottom: 2px solid #E8D8A9;
     position: sticky; 
     top: 0;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .nav ul {
@@ -137,23 +137,59 @@ a[target="_blank"]:hover {
     }
 }
 
-contacto {
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 450px; 
     margin: 0 auto;
     padding: 15px 5px;
+    
+}
+label{
+    color: #E8D8A9;
+    font-size: rem;
+    margin-bottom: 10px;
+}
+#email, #nombre, #asunto, #mensaje {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1px;
+    border: 1px solid #1F3D2B;
+    border-radius: 4px;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-size: 20px;
 }
 
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 16px;
+.form {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
 }
+form{
+    margin-right: 50px;
+}
+
 footer {
     max-width: 1200x; 
     margin: 5px auto 0 auto; 
     padding: 20px;
     text-align: center;     
+}
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+.contenedor{
+    width: 80%; 
+    margin: 0 auto;
+    padding: 60px 20px;
 }
