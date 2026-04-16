@@ -99,7 +99,11 @@ img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
+.imagen_principal, .imagen_banda, .imagen_separacion {
+    display: block;
+    margin: 0 auto;
 
+}
 p {
     color: #BFBFBF;
     font-size: 1.05rem;
