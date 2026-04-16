@@ -1,27 +1,134 @@
-body{
-    color: red;
+
+body {
+    background-color: #0D0D0D; 
+    color: #F5F5F5;            
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8; 
+    margin: 0;
+    padding: 0;
 }
 
+
 .nav {
-  background-color: #333;
-  overflow: hidden;
+    background-color: #1F3D2B; 
+    border-bottom: 2px solid #E8D8A9;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 .nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav li {
-  flex: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+    display: block;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #0D0D0D;
+    color: #E8D8A9;
+}
+
+
+.nosotros {
+    max-width: 850px; 
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h1 {
+    color: #E8D8A9;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+div[class*="Paul"], div[class*="John"], div[class*="George"], div[class*="Ringo"] {
+    background: rgba(31, 61, 43, 0.05); 
+    border: 1px solid rgba(232, 216, 169, 0.1); 
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 4px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+div[class*="Paul"]:hover, div[class*="John"]:hover, 
+div[class*="George"]:hover, div[class*="Ringo"]:hover {
+    border-color: rgba(232, 216, 169, 0.3);
+}
+
+h3 {
+    color: #E8D8A9;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+
+img {
+    width: 100%;
+    max-width: 450px; 
+    
+    
+    height: auto;       
+    object-fit: contain; 
+    border: 1px solid #1F3D2B;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+p {
+    color: #BFBFBF;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    text-align: justify; 
+}
+
+a[target="_blank"] {
+    display: inline-block;
+    color: #E8D8A9;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #1F3D2B;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+a[target="_blank"]:hover {
+    background-color: #1F3D2B;
+    color: #F5F5F5;
+    border-color: #E8D8A9;
+}
+
+
+@media (min-width: 900px) {
+    div[class*="Paul"], div[class*="John"], 
+    div[class*="George"], div[class*="Ringo"] {
+        padding: 60px;
+    }
 }
