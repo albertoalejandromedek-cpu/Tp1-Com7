@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contacto"></div>
+<h1>Formulario de contacto</h1>
+<hr>
+<br>
+    <form action="/formulario" method="post">
+    <div class="campo">
+        <label for="nombre">Nombre Completo</label>
+        <input id="nombre" name="nombre" placeholder="Ej. Paul Mc Cartney">
+        </div>
+        <br>
+     <div class="campo"> 
+        <label for="email">Correo Electronico</label>
+        <input id="email" name="email" placeholder="Ej. jhonlennon@hotmail">
+    </div>  
+    <br>
+    <div class="campo">
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto" >
+            <option value="">--- Seleccione la opcion ---</option>
+            <option value="consulta discografica">Saber mas de la discografia</option>
+            <option value="consulta beateles">Saber mas de The Beatles</option>
+            <option value="consulta integrantes">Saber mas de los integrantes</option>
+            <option value="otras consultas ">Otras consultas</option>
+        </select>
+
+    </div>
+    <br>
+    <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escriba aqui su consulta" required></textarea>
+
+    </div>
+    <br>
+    <button type="submit">Enviar Formulario</button>
+</form>
+<br>
+<br>
+<footer>Desarrollo pagina web Integrantes - David Rolón - Facundo Roman - Joaquin Villamayor - Lucas Deltell - Alejandro Medek - Tomas Occiuto</footer>
+
+</body>
+</html>
