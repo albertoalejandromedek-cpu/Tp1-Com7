@@ -132,3 +132,24 @@ a[target="_blank"]:hover {
         padding: 60px;
     }
 }
+
+contacto {
+    max-width: 450px; 
+    margin: 0 auto;
+    padding: 15px 5px;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+footer {
+    max-width: 1200x; 
+    margin: 5px auto 0 auto; 
+    padding: 20px;
+    text-align: center;     
+}
