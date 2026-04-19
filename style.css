@@ -261,6 +261,8 @@ button {
             .portada-td img { width: 90px; }
         }    
 
+<-------sector responsive------>
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
