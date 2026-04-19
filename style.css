@@ -260,3 +260,79 @@ button {
             .portada-td { width: 100px; }
             .portada-td img { width: 90px; }
         }    
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+label { font-size: 1rem !important; }
+footer { max-width: 1200px !important; }
+
+
+@media (max-width: 768px) {
+    
+    
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 8px 5px;
+    }
+    .nav a {
+        padding: 10px 12px !important;
+        font-size: 0.8rem !important;
+    }
+
+    /
+    .contenedor, .nosotros, .contacto {
+        width: 95% !important;
+        max-width: 100% !important;
+        padding: 20px 15px !important;
+        margin: 0 auto;
+    }
+
+    
+    h1 {
+        font-size: 2rem !important;
+        margin-bottom: 30px !important;
+        letter-spacing: 2px;
+    }
+    h3 { font-size: 1.4rem !important; }
+    p {
+        font-size: 0.95rem !important;
+        margin-bottom: 20px !important;
+        text-align: left !important; /* Justificado se corta en móvil */
+    }
+
+    
+    div[class*="Paul"], div[class*="John"], div[class*="George"], div[class*="Ringo"] {
+        padding: 20px 15px !important;
+        margin-bottom: 30px !important;
+    }
+
+
+    .tabla-disco {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+    .portada-td { width: 80px; }
+    .portada-td img { width: 70px; }
+
+   
+    form {
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    #email, #nombre, #asunto, #mensaje {
+        font-size: 16px !important; 
+    
+
+    
+    footer {
+        width: 100%;
+        padding: 15px !important;
+        font-size: 0.85rem;
+    }
+}
