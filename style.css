@@ -135,6 +135,8 @@ a[target="_blank"]:hover {
     div[class*="George"], div[class*="Ringo"] {
         padding: 60px;
     }
+
+  
 }
 
 .contacto {
@@ -285,13 +287,13 @@ footer { max-width: 1200px !important; }
         font-size: 0.8rem !important;
     }
 
-    /
-    .contenedor, .nosotros, .contacto {
+    
+    /* .contenedor, .nosotros, .contacto {
         width: 95% !important;
         max-width: 100% !important;
         padding: 20px 15px !important;
         margin: 0 auto;
-    }
+    } */
 
     
     h1 {
@@ -321,14 +323,69 @@ footer { max-width: 1200px !important; }
     }
     .portada-td { width: 80px; }
     .portada-td img { width: 70px; }
-
-   
-    form {
-        margin-right: 0 !important;
-        width: 100% !important;
+    .form{
+        flex-direction: column ;
+        padding: auto;
     }
-    #email, #nombre, #asunto, #mensaje {
-        font-size: 16px !important; 
+    form{
+        margin-bottom: 20px;
+    }
+   
+@media (max-width: 768px) {
+
+        .tabla-disco thead {
+          display: none;
+        }
+    
+        .tabla-disco,
+        .tabla-disco tbody,
+        .tabla-disco tr,
+        .tabla-disco td {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          border-radius: 10px;
+        }
+    
+        .tabla-disco tr {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          background: #1e1e1e;
+          border-radius: 12px;
+          
+        }
+    
+        .tabla-disco td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    
+        .portada-td img {
+          width: 200px;
+          border-radius: 8px;
+        }
+    
+        ol{
+            width: 90%;
+        }
+        
+        .lista-canciones li {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+        }
+    
+        
+}
+   
+       
     
 
     
@@ -337,4 +394,4 @@ footer { max-width: 1200px !important; }
         padding: 15px !important;
         font-size: 0.85rem;
     }
-}
+
