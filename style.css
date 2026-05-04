@@ -263,15 +263,15 @@ button {
             .portada-td img { width: 90px; }
         }    
 
-<-------sector responsive------>
+
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 
-label { font-size: 1rem !important; }
-footer { max-width: 1200px !important; }
+label { font-size: 1rem  }
+footer { max-width: 1200px ; }
 
 
 @media (max-width: 768px) {
@@ -283,8 +283,8 @@ footer { max-width: 1200px !important; }
         padding: 8px 5px;
     }
     .nav a {
-        padding: 10px 12px !important;
-        font-size: 0.8rem !important;
+        padding: 10px 12px ;
+        font-size: 0.8rem ;
     }
 
     
@@ -297,21 +297,21 @@ footer { max-width: 1200px !important; }
 
     
     h1 {
-        font-size: 2rem !important;
-        margin-bottom: 30px !important;
+        font-size: 2rem ;
+        margin-bottom: 30px ;
         letter-spacing: 2px;
     }
-    h3 { font-size: 1.4rem !important; }
+    h3 { font-size: 1.4rem ; }
     p {
-        font-size: 0.95rem !important;
-        margin-bottom: 20px !important;
-        text-align: left !important; /* Justificado se corta en móvil */
+        font-size: 0.95rem ;
+        margin-bottom: 20px ;
+        text-align: left; 
     }
 
     
     div[class*="Paul"], div[class*="John"], div[class*="George"], div[class*="Ringo"] {
-        padding: 20px 15px !important;
-        margin-bottom: 30px !important;
+        padding: 20px 15px ;
+        margin-bottom: 30px ;
     }
 
 
@@ -330,8 +330,7 @@ footer { max-width: 1200px !important; }
     form{
         margin-bottom: 20px;
     }
-   
-@media (max-width: 768px) {
+
 
         .tabla-disco thead {
           display: none;
@@ -391,7 +390,7 @@ footer { max-width: 1200px !important; }
     
     footer {
         width: 100%;
-        padding: 15px !important;
+        padding: 15px ;
         font-size: 0.85rem;
     }
 
