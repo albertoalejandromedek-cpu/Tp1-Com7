@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discografía Completa - The Beatles</title>
+    <title>Merchandising - The Beatles</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
@@ -22,113 +20,117 @@
             </ul>
         </nav>
     </div>
- <button onclick="cambiarModo()">Modo Noche / Dia</button>
-    <table class="tabla-disco">
-        <table>
-            <h1>Discografia Completa</h1>
-        <thead>
-            <tr>
-                <th>Discografia</th>
-                <th>Precio Unitario</th>
-                <th>Cantidad</th>
-                <th>Subtotal</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Please Please Me</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-PleasePleaseMe" min="0" value="0"></td>
-                <td id="sub-PleasePleaseMe">$0</td>
-            </tr>
-            <tr>
-                <td>With The Beatles</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-WithTheBeatles" min="0" value="0"></td>
-                <td id="sub-WithTheBeatles">$0</td>
-            </tr>
-            <tr>
-                <td>A Hard Day's Night</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-AHardDaysNight" min="0" value="0"></td>
-                <td id="sub-AHardDaysNight">$0</td>
-            </tr>
-            <tr>
-                <td>Beatles For Sale</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-BeatlesForSale" min="0" value="0"></td>
-                <td id="sub-BeatlesForSale">$0</td>
-            </tr>
-            <tr>
-                <td>Help!</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-Help" min="0" value="0"></td>
-                <td id="sub-Help">$0</td>
-            </tr>
-           <tr>
-                <td>Rubber Soul</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-RubberSoul" min="0" value="0"></td>
-                <td id="sub-RubberSoul">$0</td>
-            </tr>
-            <tr>
-                <td>Revolver</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-Revolver" min="0" value="0"></td>
-                <td id="sub-Revolver">$0</td>
-            </tr>
-            <tr>
-                <td>Sgt. Pepper's Lonely Hearts Club Band</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-SgtPeppersLonelyHeartsClubBand" min="0" value="0"></td>
-                <td id="sub-SgtPeppersLonelyHeartsClubBand">$0</td>
-            </tr>
-            <tr>
-                <td>Magical Mystery Tour</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-MagicalMysteryTour" min="0" value="0"></td>
-                <td id="sub-MagicalMysteryTour">$0</td>
-            </tr>
-            <tr>
-                <td>The Beatles (White Album)</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-TheBeatlesWhiteAlbum" min="0" value="0"></td>
-                <td id="sub-TheBeatlesWhiteAlbum">$0</td>
-            </tr>
-            <tr>
-                <td>Yellow Submarine</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-YellowSubmarine" min="0" value="0"></td>
-                <td id="sub-YellowSubmarine">$0</td>
-            </tr>
-            <tr>
-                <td>Abbey Road</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-AbbeyRoad" min="0" value="0"></td>
-                <td id="sub-AbbeyRoad">$0</td>
-            </tr>
-            <tr>
-                <td>Let It Be</td>
-                <td>$30.000</td>
-                <td><input type="number" id="cant-LetItBe" min="0" value="0"></td>
-                <td id="sub-LetItBe">$0</td>
-            </tr>
-        </tbody>
-    </table>
 
-    
-    <button onclick="calcularCompra()">Calcular Compra</button>
+    <button onclick="cambiarModo()">Modo Noche / Día</button>
 
+    <div class="carrito-merch">
+        <h1>Discografía Completa</h1>
+        <table class="carrito-tabla">
+            <thead>
+                <tr>
+                    <th>Álbum</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Please Please Me</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-PleasePleaseMe" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-PleasePleaseMe">$0</td>
+                </tr>
+                <tr>
+                    <td>With The Beatles</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-WithTheBeatles" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-WithTheBeatles">$0</td>
+                </tr>
+                <tr>
+                    <td>A Hard Day's Night</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-AHardDaysNight" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-AHardDaysNight">$0</td>
+                </tr>
+                <tr>
+                    <td>Beatles For Sale</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-BeatlesForSale" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-BeatlesForSale">$0</td>
+                </tr>
+                <tr>
+                    <td>Help!</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-Help" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-Help">$0</td>
+                </tr>
+                <tr>
+                    <td>Rubber Soul</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-RubberSoul" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-RubberSoul">$0</td>
+                </tr>
+                <tr>
+                    <td>Revolver</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-Revolver" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-Revolver">$0</td>
+                </tr>
+                <tr>
+                    <td>Sgt. Pepper's Lonely Hearts Club Band</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-SgtPeppersLonelyHeartsClubBand" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-SgtPeppersLonelyHeartsClubBand">$0</td>
+                </tr>
+                <tr>
+                    <td>Magical Mystery Tour</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-MagicalMysteryTour" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-MagicalMysteryTour">$0</td>
+                </tr>
+                <tr>
+                    <td>The Beatles (White Album)</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-TheBeatlesWhiteAlbum" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-TheBeatlesWhiteAlbum">$0</td>
+                </tr>
+                <tr>
+                    <td>Yellow Submarine</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-YellowSubmarine" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-YellowSubmarine">$0</td>
+                </tr>
+                <tr>
+                    <td>Abbey Road</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-AbbeyRoad" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-AbbeyRoad">$0</td>
+                </tr>
+                <tr>
+                    <td>Let It Be</td>
+                    <td class="precio-col">$30.000</td>
+                    <td><input type="number" id="cant-LetItBe" min="0" value="0"></td>
+                    <td class="subtotal-col" id="sub-LetItBe">$0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <div id="resultado">
+    <div class="cupon-section">
+        <label for="input-cupon">Cupón de descuento:</label>
+        <input type="text" id="input-cupon" placeholder="Ej: beatles15">
+        <span id="msg-cupon"></span>
+    </div>
+
+    <div class="resumen-merch" id="resultado">
         <h3>Resumen de la Compra</h3>
         <p>Cantidad total de artículos: <span id="res-cantidad">0</span></p>
         <p>Importe bruto: <span id="res-bruto">$0</span></p>
         <p>Descuento aplicado: <span id="res-descuento">0%</span> (<span id="res-descuento-monto">$0</span>)</p>
-        <p><strong>Total a pagar: <span id="res-total">$0</span></strong></p>
+        <p class="total-final">Total a pagar: <span id="res-total">$0</span></p>
     </div>
-<script src="script.js"></script>
-    
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -12,9 +12,10 @@ body {
 .nav {
     background-color: #1F3D2B; 
     border-bottom: 2px solid #E8D8A9;
-    position: sticky; 
-    top: 0;
     z-index: 2000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav ul {
@@ -235,15 +236,144 @@ footer {
     text-align: center;     
 }
 button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
+    padding: 10px 22px;
+    background-color: #1F3D2B;
+    color: #E8D8A9;
+    border: 1px solid #E8D8A9;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
-    margin-top: 10px;
-    }
+    margin-top: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+     z-index: 2100;
+}
+
+button:hover {
+    background-color: #E8D8A9;
+    color: #1F3D2B;
+}
+
+body.modo-dia {
+    background-color: #F5F0E8;
+    color: #1A1A1A;
+}
+
+body.modo-dia .nav {
+    background-color: #1F3D2B;
+    border-bottom: 2px solid #4a7c59;
+}
+
+body.modo-dia .nav a {
+    color: #F5F0E8;
+}
+
+body.modo-dia .nav a:hover {
+    background-color: #4a7c59;
+    color: #fff;
+}
+
+body.modo-dia h1,
+body.modo-dia h3 {
+    color: #1F3D2B;
+}
+
+body.modo-dia p {
+    color: #333333;
+}
+
+body.modo-dia .tabla-disco th {
+    background-color: #1F3D2B;
+    color: #E8D8A9;
+}
+
+body.modo-dia .tabla-disco td {
+    color: #1A1A1A;
+    border-color: rgba(31, 61, 43, 0.2);
+}
+
+body.modo-dia .lista-canciones li {
+    color: #222;
+}
+
+body.modo-dia .integrante {
+    background: rgba(31, 61, 43, 0.08);
+    border-color: rgba(31, 61, 43, 0.25);
+}
+
+body.modo-dia .integrante p.bio {
+    color: #333;
+}
+
+body.modo-dia a[target="_blank"] {
+    color: #1F3D2B;
+    border-color: #1F3D2B;
+}
+
+body.modo-dia a[target="_blank"]:hover {
+    background-color: #1F3D2B;
+    color: #F5F0E8;
+}
+
+body.modo-dia #email,
+body.modo-dia #nombre,
+body.modo-dia #asunto,
+body.modo-dia #mensaje {
+    background-color: #fff;
+    color: #1A1A1A;
+    border-color: #1F3D2B;
+}
+
+body.modo-dia label {
+    color: #1F3D2B;
+}
+
+body.modo-dia #resultado {
+    background: rgba(31, 61, 43, 0.08);
+    border-color: rgba(31, 61, 43, 0.3);
+    color: #1A1A1A;
+}
+
+body.modo-dia .carrito-merch {
+    background: rgba(31, 61, 43, 0.08);
+    border-color: rgba(31, 61, 43, 0.3);
+    color: #1A1A1A;
+}
+body.modo-dia .carrito-tabla td {
+    color: #1A1A1A;
+}
+body.modo-dia .resumen-merch p {
+    color: #1A1A1A;
+}
+
+body.modo-dia .resumen-merch p span {
+    color: #1F3D2B;
+}
+
+body.modo-dia .resumen-merch .total-final {
+    color: #1F3D2B;
+}
+
+body.modo-dia .resumen-merch .total-final span {
+    color: #1F3D2B;
+}
+body.modo-dia .resumen-merch .total-final {
+    border-top-color: #1F3D2B;
+}
+body.modo-dia button {
+    background-color: #1F3D2B;
+    color: #E8D8A9;
+    border-color: #4a7c59;
+}
+
+body.modo-dia button:hover {
+    background-color: #4a7c59;
+    color: #fff;
+}
 .contenedor{
     width: 80%; 
     margin: 0 auto;
@@ -448,3 +578,178 @@ footer { max-width: 1200px ; }
         font-size: 0.85rem;
     }
 
+
+.carrito-merch {
+    max-width: 860px;
+    margin: 30px auto;
+    padding: 30px 25px;
+    background: rgba(31, 61, 43, 0.12);
+    border: 1px solid rgba(232, 216, 169, 0.25);
+    border-radius: 8px;
+}
+
+.carrito-merch h1 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+}
+
+.carrito-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrito-tabla th {
+    background-color: #1F3D2B;
+    color: #E8D8A9;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    padding: 13px 15px;
+    text-align: left;
+    position: sticky;
+    top: 60px;
+    z-index: 10;
+}
+
+.carrito-tabla td {
+    padding: 14px 15px;
+    border-bottom: 1px solid rgba(232, 216, 169, 0.08);
+    color: #F5F5F5;
+    vertical-align: middle;
+    font-size: 0.97rem;
+}
+
+.carrito-tabla tbody tr:hover {
+    background: rgba(232, 216, 169, 0.05);
+}
+
+.carrito-tabla input[type="number"] {
+    width: 65px;
+    padding: 6px 8px;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    border: 1px solid rgba(232, 216, 169, 0.3);
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.carrito-tabla .subtotal-col {
+    color: #E8D8A9;
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+}
+
+.precio-col {
+    color: #BFBFBF;
+    font-family: 'Courier New', monospace;
+}
+
+.resumen-merch {
+    max-width: 860px;
+    margin: 0 auto 20px auto;
+    padding: 22px 25px;
+    background: rgba(31, 61, 43, 0.15);
+    border: 1px solid rgba(232, 216, 169, 0.2);
+    border-radius: 8px;
+}
+
+.resumen-merch h3 {
+    color: #E8D8A9;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.resumen-merch p {
+    margin: 6px 0;
+    font-size: 0.97rem;
+    color: #BFBFBF;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.resumen-merch p span {
+    color: #F5F5F5;
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+}
+
+.resumen-merch .total-final {
+    color: #E8D8A9;
+    font-size: 1.1rem;
+    border-top: 1px solid rgba(232, 216, 169, 0.2);
+    padding-top: 12px;
+    margin-top: 10px;
+}
+
+.resumen-merch .total-final span {
+    color: #E8D8A9;
+    font-size: 1.2rem;
+}
+
+.cupon-section {
+    max-width: 860px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cupon-section label {
+    color: #E8D8A9;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cupon-section input[type="text"] {
+    padding: 9px 14px;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    border: 1px solid rgba(232, 216, 169, 0.3);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 200px;
+}
+
+.cupon-section input[type="text"]:focus {
+    outline: none;
+    border-color: #E8D8A9;
+}
+
+#msg-cupon {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#msg-cupon.ok {
+    color: #6fcf97;
+}
+
+#msg-cupon.error {
+    color: #eb5757;
+}
+
+@media (max-width: 768px) {
+    .carrito-merch {
+        padding: 15px 10px;
+    }
+    .carrito-tabla th,
+    .carrito-tabla td {
+        padding: 10px 8px;
+        font-size: 0.88rem;
+    }
+    .cupon-section input[type="text"] {
+        width: 150px;
+    }
+}
